@@ -1,0 +1,279 @@
+!SESSION 2023-12-11 22:00:01.704 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data G:\Workplace\Embedded\course01\host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-11 22:00:20.127
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-11 22:00:20.340
+!MESSAGE Log4j initialized with config file G:\Workplace\Embedded\course01\host\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2023-12-11 22:00:21.262
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4907)
+	at org.eclipse.swt.SWT.error(SWT.java:4822)
+	at org.eclipse.swt.SWT.error(SWT.java:4793)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:445)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:364)
+	at org.eclipse.swt.widgets.Widget.setData(Widget.java:1268)
+	at org.eclipse.e4.ui.css.swt.dom.WidgetElement.setCSSClass(WidgetElement.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.setClassnameAndId(PartRenderingEngine.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.setCSSInfo(SWTPartRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.createWidget(ToolBarManagerRenderer.java:425)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeChildrenHandler(PartRenderingEngine.java:311)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.processAddition(ContributionsAnalyzer.java:448)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.addTrimContributions(TrimBarRenderer.java:146)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1082)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-12-11 22:00:21.270
+!MESSAGE Exception occurred while rendering: com.st.stm32cube.common.mx.toolbar=org.eclipse.e4.ui.model.application.ui.menu.impl.ToolBarImpl@5d32c1c7 (tags: [Draggable], contributorURI: null) (widget: ImageBasedFrame {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer@3ba97962, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null)
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4907)
+	at org.eclipse.swt.SWT.error(SWT.java:4822)
+	at org.eclipse.swt.SWT.error(SWT.java:4793)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:445)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:364)
+	at org.eclipse.swt.widgets.Widget.setData(Widget.java:1268)
+	at org.eclipse.e4.ui.css.swt.dom.WidgetElement.setCSSClass(WidgetElement.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.setClassnameAndId(PartRenderingEngine.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.setCSSInfo(SWTPartRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.createWidget(ToolBarManagerRenderer.java:425)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeChildrenHandler(PartRenderingEngine.java:311)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.processAddition(ContributionsAnalyzer.java:448)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.addTrimContributions(TrimBarRenderer.java:146)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1082)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-11 22:00:38.784
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:07.997
+!MESSAGE Indexed 'switchCaseArea' (1 sources, 0 headers) in 1.15 sec: 12 declarations; 86 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:12.283
+!MESSAGE Indexed 'union' (1 sources, 0 headers) in 0.063 sec: 6 declarations; 12 references; 2 unresolved inclusions; 0 syntax errors; 2 unresolved names (10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:15.094
+!MESSAGE Indexed 'ifstatementCastVote' (1 sources, 0 headers) in 0.017 sec: 3 declarations; 10 references; 2 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:18.210
+!MESSAGE Indexed 'macro' (1 sources, 0 headers) in 0.073 sec: 3 declarations; 14 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:19.195
+!MESSAGE Indexed 'forloopNumberPyramid' (1 sources, 0 headers) in 0.019 sec: 9 declarations; 16 references; 2 unresolved inclusions; 0 syntax errors; 3 unresolved names (11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:19.543
+!MESSAGE Indexed 'ASCII' (1 sources, 0 headers) in 0.016 sec: 8 declarations; 18 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:20.543
+!MESSAGE Indexed 'pointer_1' (1 sources, 0 headers) in 0.04 sec: 7 declarations; 20 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:21.565
+!MESSAGE Indexed 'arrays_passing' (1 sources, 0 headers) in 0.038 sec: 12 declarations; 15 references; 2 unresolved inclusions; 0 syntax errors; 9 unresolved names (25%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:23.063
+!MESSAGE Indexed 'student_record' (1 sources, 0 headers) in 0.093 sec: 63 declarations; 153 references; 3 unresolved inclusions; 0 syntax errors; 14 unresolved names (6.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:24.673
+!MESSAGE Indexed 'type_casting' (1 sources, 0 headers) in 0.019 sec: 4 declarations; 3 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:26.438
+!MESSAGE Indexed 'pointer' (1 sources, 0 headers) in 0.014 sec: 5 declarations; 11 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:27.499
+!MESSAGE Indexed 'test' (1 sources, 0 headers) in 0.013 sec: 5 declarations; 5 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:28.594
+!MESSAGE Indexed 'ifelseifTax' (1 sources, 0 headers) in 0.019 sec: 9 declarations; 29 references; 2 unresolved inclusions; 0 syntax errors; 3 unresolved names (7.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:29.952
+!MESSAGE Indexed 'struct_array' (1 sources, 0 headers) in 0.02 sec: 14 declarations; 13 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (3.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:31.601
+!MESSAGE Indexed 'pointer_2' (1 sources, 0 headers) in 0.015 sec: 4 declarations; 13 references; 2 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:31.632
+!MESSAGE Indexed 'strings' (1 sources, 0 headers) in 0.016 sec: 2 declarations; 7 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:32.729
+!MESSAGE Indexed 'WhileLoop1to10' (1 sources, 0 headers) in 0.011 sec: 7 declarations; 7 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (6.7%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:33.832
+!MESSAGE Indexed 'bitWiseEvenOdd' (1 sources, 0 headers) in 0.02 sec: 7 declarations; 12 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:33.922
+!MESSAGE Indexed 'math' (2 sources, 1 headers) in 0.04 sec: 26 declarations; 15 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (4.7%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:44.196
+!MESSAGE Indexed 'function' (1 sources, 0 headers) in 0.02 sec: 11 declarations; 9 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:44.216
+!MESSAGE Indexed 'structInit' (1 sources, 0 headers) in 0.008 sec: 6 declarations; 4 references; 2 unresolved inclusions; 0 syntax errors; 2 unresolved names (17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:44.892
+!MESSAGE Indexed 'arrays_swap' (1 sources, 0 headers) in 0.018 sec: 32 declarations; 76 references; 2 unresolved inclusions; 0 syntax errors; 21 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:45.563
+!MESSAGE Indexed 'arrays' (1 sources, 0 headers) in 0.011 sec: 5 declarations; 14 references; 2 unresolved inclusions; 0 syntax errors; 3 unresolved names (14%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:45.583
+!MESSAGE Indexed 'dataAlignment' (1 sources, 0 headers) in 0.014 sec: 11 declarations; 24 references; 2 unresolved inclusions; 0 syntax errors; 4 unresolved names (10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:45.605
+!MESSAGE Indexed 'forLoopEvenNum' (1 sources, 0 headers) in 0.013 sec: 9 declarations; 23 references; 2 unresolved inclusions; 0 syntax errors; 2 unresolved names (5.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:45.622
+!MESSAGE Indexed 'ifelseBiggestOfTwo' (1 sources, 0 headers) in 0.01 sec: 10 declarations; 32 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (2.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:46.209
+!MESSAGE Indexed 'whileLoopEvenNum' (1 sources, 0 headers) in 0.018 sec: 9 declarations; 23 references; 2 unresolved inclusions; 0 syntax errors; 2 unresolved names (5.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:46.822
+!MESSAGE Indexed 'bitWise2Numbers' (1 sources, 0 headers) in 0.012 sec: 8 declarations; 19 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (3.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:46.843
+!MESSAGE Indexed 'test2' (1 sources, 0 headers) in 0.015 sec: 5 declarations; 8 references; 1 unresolved inclusions; 0 syntax errors; 1 unresolved names (7.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:47.724
+!MESSAGE Indexed 'structPointer' (1 sources, 0 headers) in 0.013 sec: 12 declarations; 26 references; 2 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:49.887
+!MESSAGE Indexed 'Average' (1 sources, 0 headers) in 0.011 sec: 6 declarations; 14 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:49.972
+!MESSAGE Indexed 'ifelseCastVote' (1 sources, 0 headers) in 0.011 sec: 3 declarations; 9 references; 2 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.049
+!MESSAGE Indexed 'structPacketBitfield' (1 sources, 0 headers) in 0.037 sec: 13 declarations; 56 references; 2 unresolved inclusions; 0 syntax errors; 17 unresolved names (20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.106
+!MESSAGE Indexed 'unionBitExraction' (1 sources, 0 headers) in 0.055 sec: 15 declarations; 41 references; 2 unresolved inclusions; 0 syntax errors; 9 unresolved names (14%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.277
+!MESSAGE Indexed 'structPacket' (1 sources, 0 headers) in 0.021 sec: 13 declarations; 56 references; 2 unresolved inclusions; 0 syntax errors; 17 unresolved names (20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.509
+!MESSAGE Indexed 'constdata' (1 sources, 0 headers) in 0.008 sec: 4 declarations; 7 references; 2 unresolved inclusions; 0 syntax errors; 3 unresolved names (21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.644
+!MESSAGE Indexed 'var_address' (1 sources, 0 headers) in 0.01 sec: 3 declarations; 3 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-11 22:02:50.761
+!MESSAGE Indexed 'bitWiseSet' (1 sources, 0 headers) in 0.027 sec: 8 declarations; 12 references; 2 unresolved inclusions; 0 syntax errors; 1 unresolved names (4.8%)

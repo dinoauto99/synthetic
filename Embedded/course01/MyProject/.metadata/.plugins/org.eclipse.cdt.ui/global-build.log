@@ -1,0 +1,14 @@
+22:20:18 **** Incremental Build of configuration Debug for project 01-myself ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-myself.elf" @"objects.list"   -mcpu=cortex-m4 -T"G:\Workplace\Embedded\course01\MyProject\01-myself\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-myself.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-myself.elf
+ 
+arm-none-eabi-size   01-myself.elf 
+arm-none-eabi-objdump -h -S  01-myself.elf  > "01-myself.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	01-myself.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-myself.list
+ 

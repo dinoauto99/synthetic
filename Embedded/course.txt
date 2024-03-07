@@ -1,0 +1,27 @@
+Learning order of FastBit Embedded Brain Academy Courses,
+
+If you are a beginner in the field of embedded systems, then you can take our courses in the below-mentioned order.
+This is just a recommendation from the instructor for beginners.
+
+
+1) Microcontroller Embedded C Programming: absolute beginners(Embedded C)
+
+2) Embedded Systems Programming on ARM Cortex-M3/M4 Processor(ARM Cortex M4 Processor specific)
+
+3) Mastering Microcontroller with Embedded Driver Development(MCU1)
+
+4) Mastering Microcontroller: TIMERS, PWM, CAN, RTC,LOW POWER(MCU2)
+
+5) Mastering Microcontroller: STM32-LTDC, LCD-TFT, LVGL(MCU3)
+
+6) Embedded System Design using UML State Machines(State machine)
+
+7) Mastering RTOS: Hands-on FreeRTOS and STM32Fx with Debugging(RTOS)
+
+8) ARM Cortex M Microcontroller DMA Programming Demystified(DMA)
+
+9) STM32Fx Microcontroller Custom Bootloader Development(Bootloader)
+
+10) Embedded Linux Step by Step using Beaglebone Black(Linux)
+
+11) Linux device driver programming using Beaglebone Black(LDD1)
