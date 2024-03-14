@@ -279,3 +279,118 @@ If the __str__() function is not set, the string representation of the object is
 The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.
 The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
 It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class.
+
+*****************************
+* INHERITANCE
+*****************************
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+Parent class is the class being inherited from, also called base class.
+Child class is the class that inherits from another class, also called derived class.
+Any class can be a parent class, so the syntax is the same as creating any other class: class Person:
+To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class: class Student(Person):
+Note: Use the pass keyword when you do not want to add any other properties or methods to the class.
+The __init__() function is called automatically every time the class is being used to create a new object.
+The child's __init__() function overrides the inheritance of the parent's __init__() function.
+Python also has a super() function that will make the child class inherit all the methods and properties from its parent. By using the super() function, you do not have to use the name of the parent element, it will automatically inherit the methods and properties from its parent.
+If you add a method in the child class with the same name as a function in the parent class, the inheritance of the parent method will be overridden.
+
+*****************************
+* ITERATOR
+*****************************
+Lists, tuples, dictionaries, and sets are all iterable objects. They are iterable containers which you can get an iterator from.
+All these objects have a iter() method which is used to get an iterator
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+print(next(myit))
+print(next(myit))
+print(next(myit))
+We can also use a for loop to iterate through an iterable object.
+
+*****************************
+* POLYMORPHISM
+*****************************
+The word "polymorphism" means "many forms", and in programming it refers to methods/functions/operators with the same name that can be executed on many objects or classes.
+An example of a Python function that can be used on different objects is the len() function:
+- For strings len() returns the number of characters
+- For tuples len() returns the number of items in the tuple
+- For dictionaries len() returns the number of key/value pairs in the dictionary
+Polymorphism is often used in Class methods, where we can have multiple classes with the same method name.
+
+*****************************
+* SCOPE
+*****************************
+A variable is only available from inside the region it is created. This is called scope.
+A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+Global variables are available from within any scope, global and local.
+If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function).
+If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+The global keyword makes the variable global.
+Also, use the global keyword if you want to make a change to a global variable inside a function.
+
+*****************************
+* MODULES
+*****************************
+Consider a module to be the same as a code library.
+A file containing a set of functions you want to include in your application.
+To create a module just save the code you want in a file with the file extension .py
+Now we can use the module we just created, by using the import statement
+Note: When using a function from a module, use the syntax: module_name.function_name.
+You can create an alias when you import a module, by using the as keyword
+The dir() function can be used on all modules, also the ones you create yourself.
+You can choose to import only parts from a module, by using the from keyword.
+When importing using the from keyword, do not use the module name when referring to elements in the module.
+
+*****************************
+* DATETIME
+*****************************
+A date in Python is not a data type of its own, but we can import a module named datetime to work with dates as date objects.
+To create a date, we can use the datetime() class (constructor) of the datetime module.
+The datetime() class requires three parameters to create a date: year, month, day.
+The datetime() class also takes parameters for time and timezone (hour, minute, second, microsecond, tzone), but they are optional, and has a default value of 0, (None for timezone).
+The datetime object has a method for formatting date objects into readable strings.
+The method is called strftime(), and takes one parameter, format, to specify the format of the returned string
+Directive	Description	                          Example
+%a	      Weekday, short version	              Wed	
+%A	      Weekday, full version               	Wednesday	
+%w	      Weekday as a number 0-6, 0 is Sunday	3	
+%d	      Day of month 01-31	                  31	
+%b	      Month name, short version	            Dec	
+%B	      Month name, full version	            December	
+%m	      Month as a number 01-12	              12	
+%y	      Year, short version, without century	18	
+%Y	      Year, full version	                  2018	
+%H	      Hour 00-23	                          17	
+%I	      Hour 00-12	                          05	
+%p	      AM/PM	                                PM	
+%M	      Minute 00-59	                        41	
+%S	      Second 00-59	                        08	
+%f	      Microsecond 000000-999999	            548513	
+%z	      UTC offset	                          +0100	
+%Z	      Timezone	                            CST	
+%j	      Day number of year 001-366	          365	
+%U	      Week number of year, Sunday as the first day of week, 00-53	  52	
+%W	      Week number of year, Monday as the first day of week, 00-53	  52	
+%c	      Local version of date and time	      Mon Dec 31 17:41:00 2018	
+%C	      Century	                              20	
+%x	      Local version of date	                12/31/18	
+%X	      Local version of time	                17:41:00	
+%%	      A % character	                        %	
+%G	      ISO 8601 year	                        2018	
+%u	      ISO 8601 weekday (1-7)	              1	
+%V	      ISO 8601 weeknumber (01-53)	          01
+
+*****************************
+* MATH
+*****************************
+Python has a set of built-in math functions, including an extensive math module, that allows you to perform mathematical tasks on numbers.
+The min() and max() functions can be used to find the lowest or highest value in an iterable
+The abs() function returns the absolute (positive) value of the specified number
+The pow(x, y) function returns the value of x to the power of y (x^y)
+The math.sqrt() method for example, returns the square root of a number
+The math.ceil() method rounds a number upwards to its nearest integer, and the math.floor() method rounds a number downwards to its nearest integer, and returns the result
+The math.pi constant, returns the value of PI (3.14...)
+
+*****************************
+* JSON
+*****************************
