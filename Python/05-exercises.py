@@ -1,3 +1,4 @@
+import re
 import datetime as dt
 from mymodule import rest as rr
 import mymodule as mm
@@ -56,3 +57,40 @@ for x in dir(mm):
 rr()
 
 print(dt.datetime.now())
+
+orgStr = 'this is 242th street, NY town, code 3456, welcome'
+
+m = re.findall('\d+', orgStr)
+for x in m:
+    print(x)
+
+abc = 123
+try:
+    print(abc)
+except:
+    print('that variable is not defined yet')
+else:
+    print('nothing went wrong')
+finally:
+    print('end try-except')
+
+try:
+    f = open('G:\Workspace\synthetic\Python\demofile.txt', 'w+')
+    try:
+        f.write("this text is wrote by Python")
+        print('write successfully')
+    except:
+        print("can not write to file")
+    finally:
+        f.close()
+except:
+    print("can not open file")
+str1 = "abc"
+try:
+    if type(str1) is not int:
+        raise TypeError("can not convert to int")
+except TypeError as e:
+    print("exception error:", str(e))
+
+a = 123
+print("the number is {:.2f}".format(a))

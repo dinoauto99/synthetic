@@ -10,3 +10,4 @@ mydict = {
 
 def rest():
     print('only import this function')
+

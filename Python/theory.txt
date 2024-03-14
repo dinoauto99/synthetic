@@ -394,3 +394,120 @@ The math.pi constant, returns the value of PI (3.14...)
 *****************************
 * JSON
 *****************************
+JSON is a syntax for storing and exchanging data.
+JSON is text, written with JavaScript object notation.
+Python has a built-in package called json, which can be used to work with JSON data.
+If you have a JSON string, you can parse it by using the json.loads() method.
+The result will be a Python dictionary.
+If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+You can convert Python objects of the following types, into JSON strings: dict, list, tuple, string, int, float, True, False, None
+Python	JSON
+dict	  Object
+list	  Array
+tuple	  Array
+str	    String
+int	    Number
+float	  Number
+True	  true
+False	  false
+None	  null
+
+*****************************
+* REGEX
+*****************************
+A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
+RegEx can be used to check if a string contains the specified search pattern.
+Python has a built-in package called re, which can be used to work with Regular Expressions.
+The re module offers a set of functions that allows us to search a string for a match:
+Function	Description
+findall	  Returns a list containing all matches
+search	  Returns a Match object if there is a match anywhere in the string
+split	    Returns a list where the string has been split at each match
+sub	      Replaces one or many matches with a string
+Metacharacters are characters with a special meaning:
+Character	Description	                                                          Example
+[]	A set of characters	                                                        "[a-m]"	
+\	  Signals a special sequence (can also be used to escape special characters)	"\d"	
+.	  Any character (except newline character)	                                  "he..o"	
+^	  Starts with	                                                                "^hello"	
+$	  Ends with	                                                                  "planet$"	
+*	  Zero or more occurrences	                                                  "he.*o"	
++	  One or more occurrences	                                                    "he.+o"	
+?	  Zero or one occurrences	                                                    "he.?o"	
+{}	Exactly the specified number of occurrences	                                "he.{2}o"	
+|	  Either or	                                                                  "falls|stays"	
+()	Capture and group
+A special sequence is a \ followed by one of the characters in the list below, and has a special meaning:
+Character	Description	                                                    Example
+\A	Returns a match if the specified characters are at the beginning of the string	"\AThe"	
+\b	Returns a match where the specified characters are at the beginning or at the end of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\bain"
+\B	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\Bain"
+\d	Returns a match where the string contains digits (numbers from 0-9)	"\d"	
+\D	Returns a match where the string DOES NOT contain digits	"\D"	
+\s	Returns a match where the string contains a white space character	"\s"	
+\S	Returns a match where the string DOES NOT contain a white space character	"\S"	
+\w	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)	"\w"	
+\W	Returns a match where the string DOES NOT contain any word characters	"\W"	
+\Z	Returns a match if the specified characters are at the end of the string	"Spain\Z"
+A set is a set of characters inside a pair of square brackets [] with a special meaning:
+Set	Description
+[arn]	Returns a match where one of the specified characters (a, r, or n) is present	
+[a-n]	Returns a match for any lower case character, alphabetically between a and n	
+[^arn]	Returns a match for any character EXCEPT a, r, and n	
+[0123]	Returns a match where any of the specified digits (0, 1, 2, or 3) are present	
+[0-9]	Returns a match for any digit between 0 and 9	
+[0-5][0-9]	Returns a match for any two-digit numbers from 00 and 59	
+[a-zA-Z]	Returns a match for any character alphabetically between a and z, lower case OR upper case	
+[+]	In sets, +, *, ., |, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string
+If there is no match, the value None will be returned, instead of the Match Object.
+The Match object has properties and methods used to retrieve information about the search, and the result:
+.span() returns a tuple containing the start-, and end positions of the match.
+.string returns the string passed into the function
+.group() returns the part of the string where there was a match
+
+*****************************
+* PIP
+*****************************
+PIP is a package manager for Python packages, or modules if you like.
+A package contains all the files you need for a module.
+Modules are Python code libraries you can include in your project.
+Downloading a package is very easy.
+Open the command line interface and tell PIP to download the package you want.
+Navigate your command line to the location of Python's script directory, and type the following: pip install camelcase
+Once the package is installed, it is ready to use. Import the "camelcase" package into your project.
+Find more packages at https://pypi.org/.
+Use the uninstall command to remove a package
+Use the list command to list all the packages installed on your system
+
+*****************************
+* TRY EXCEPT
+*****************************
+The try block lets you test a block of code for errors.
+The except block lets you handle the error.
+The else block lets you execute code when there is no error.
+The finally block lets you execute code, regardless of the result of the try- and except blocks.
+As a Python developer you can choose to throw an exception if a condition occurs.
+To throw (or raise) an exception, use the raise keyword.
+
+*****************************
+* USER INPUT
+*****************************
+Python allows for user input.
+That means we are able to ask the user for input.
+The method is a bit different in Python 3.6 than Python 2.7.
+Python 3.6 uses the input() method.
+Python 2.7 uses the raw_input() method.
+Python stops executing when it comes to the input() function, and continues when the user has given some input.
+
+*****************************
+* STRING FORMATING
+*****************************
+To make sure a string will display as expected, we can format the result with the format() method.
+The format() method allows you to format selected parts of a string.
+
+Sometimes there are parts of a text that you do not control, maybe they come from a database, or user input?
+To control such values, add placeholders (curly brackets {}) in the text, and run the values through the format() method.
+You can add parameters inside the curly brackets to specify how to convert the value: txt = "The price is {:.2f} dollars"
+If you want to use more values, just add more values to the format() method: myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the correct placeholders: myorder = "I want {0} pieces of item number {1} for {2:.2f} dollars."
+You can also use named indexes by entering a name inside the curly brackets {carname}, but then you must use names when you pass the parameter values txt.format(carname = "Ford")
