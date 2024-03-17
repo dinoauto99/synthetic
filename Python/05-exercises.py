@@ -60,7 +60,7 @@ print(dt.datetime.now())
 
 orgStr = 'this is 242th street, NY town, code 3456, welcome'
 
-m = re.findall('\d+', orgStr)
+m = re.findall('/d+', orgStr)
 for x in m:
     print(x)
 
@@ -75,7 +75,7 @@ finally:
     print('end try-except')
 
 try:
-    f = open('G:\Workspace\synthetic\Python\demofile.txt', 'w+')
+    f = open('G:/Workspace/synthetic/Python/demofile.txt', 'w')
     try:
         f.write("this text is wrote by Python")
         print('write successfully')
