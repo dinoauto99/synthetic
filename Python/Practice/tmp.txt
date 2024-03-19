@@ -1,0 +1,5 @@
+path_1=D:/working/edev
+path_2=D:/working/edev/ecu
+path_3=D:/working/edev/edev_env
+path_4=D:/working/edev/ecu/mkall
+path_5=D:/working/edev/edev_env/unittest
