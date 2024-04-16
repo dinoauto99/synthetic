@@ -7,8 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                // "${file}",
-                "G:\\Workspace\\synthetic\\DevC\\lesson4\\**.c", // build all files in dir
+                "${file}",
+                // "G:\\Workspace\\synthetic\\DevC\\lesson4\\**.c", // build all files in dir
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
