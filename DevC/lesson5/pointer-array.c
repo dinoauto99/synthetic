@@ -45,10 +45,24 @@ void bass_by_ptr()
     return;
 }
 
+void print_array_elements(int a[], int n)
+{
+    printf("Array elements: ");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\t", a[i]);
+    }
+    return;
+}
+
 int main(int argc, char *argv[])
 {
     // basic_pointer();
-    bass_by_ptr();
+    // bass_by_ptr();
+
+    int a[] = {1, 2, 3, 4, 5};
+    int *p = a;
+    print_array_elements(p, 5);
 
     return 0;
 }
