@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct contact_info
 {
@@ -10,23 +11,65 @@ typedef struct contact_info
 
 void search_contact()
 {
+    char name[20];
+    int is_found = 0;
+    printf("Input name to search: ");
+    scanf("%s", name);
+    FILE *file = fopen("contacts.txt", "r");
+    if (file == NULL)
+    {
+        perror("Error while opening file\n");
+        exit(1);
+    }
+    char str[100];
+    printf("Result: ");
+    while (fgets(str, sizeof(str), file) != NULL)
+    {
+        if (strstr(str, name) != NULL)
+        {
+            is_found = 1;
+            printf("%s\n", str);
+        }
+    }
+    if (is_found == 0)
+    {
+        printf("not found!\n");
+    }
+
+    fclose(file);
 }
 
 void show_all_contacts()
 {
+    FILE *file = fopen("contacts.txt", "r");
+    if (file == NULL)
+    {
+        perror("Error while opening file\n");
+        exit(1);
+    }
+    char str[100];
+    printf("Show all contacts\n");
+    while (fgets(str, sizeof(str), file) != NULL)
+    {
+        printf("%s", str);
+    }
+    fclose(file);
 }
 
 void add_contact()
 {
     info contact;
-    puts("Input contact infomation\n");
-    puts("    name: ");
-    gets(contact.name);
-    puts("    phone number: ");
-    gets(contact.phone);
-    puts("    address: ");
-    gets(contact.addr);
-    FILE *file = fopen("contacts.txt", "w");
+    printf("Add new contact\n");
+    printf("    name: ");
+    // scanf("%s", &contact.name);
+    fgets(contact.name, sizeof(contact.name), stdin);
+    printf("    phone number: ");
+    // scanf("%s", &contact.phone);
+    fgets(contact.phone, sizeof(contact.phone), stdin);
+    printf("    address: ");
+    // scanf("%s", &contact.addr);
+    fgets(contact.addr, sizeof(contact.addr), stdin);
+    FILE *file = fopen("contacts.txt", "a");
     if (file == NULL)
     {
         perror("Error while opening file.\n");
@@ -44,12 +87,17 @@ void proc_choice(int choice)
     case 1:
         /* add new contact */
         add_contact();
+        printf("--------------------------\n");
         break;
     case 2:
         /* show all contacts */
+        show_all_contacts();
+        printf("--------------------------\n");
         break;
     case 3:
         /* search contact by name */
+        search_contact();
+        printf("--------------------------\n");
         break;
     case 4:
         /* exit program */
