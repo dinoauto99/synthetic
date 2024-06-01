@@ -7,3 +7,4 @@
 # Ignore other common files
 
 # Ignore directories
+.vscode
