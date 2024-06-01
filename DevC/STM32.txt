@@ -1,0 +1,11 @@
+STM32
+1. giới thiệu về hệ thống nhúng
+2. giới thiệu về blue pill stm32
+3. kiến trúc arm cortex-m
+4. exception & interrupt
+5. Peripherals Clock distribution & Multipurpose Clock Generator
+6. peripherals pit timer
+7. peripherals uart
+8. Introduce to Basic Real-Time Applications and RTOS
+9. Mock test
+10. Introduce to Basic Real-Time Applications and RTOS
